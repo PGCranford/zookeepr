@@ -53,12 +53,13 @@ app.get('/api/animals', (req, res) => {
     const result = findById(req.params.id, animals);
     if (result) {
         res.json(result);
-    } else {
+    }
+    else {
         res.send(404);
     }
 });
 
-app.get('/api/animals/id', (req, res) => {
+app.get('/api/animals/:id', (req, res) => {
     const result = findById(req.params.id, animals);
     res.json(result);
 });

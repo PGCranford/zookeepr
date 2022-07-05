@@ -58,9 +58,15 @@ app.get('/api/animals', (req, res) => {
     }
 });
 
-app.get('/api/animals/:id', (req, res) => {
+app.get('/api/animals/id', (req, res) => {
     const result = findById(req.params.id, animals);
     res.json(result);
+});
+
+app.post('/api/animals', (req, res) => {
+    // req.body is where our incoming content will be
+    console.log(req.body);
+    res.json(req.body);
 });
 
 

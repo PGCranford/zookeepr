@@ -116,16 +116,16 @@ app.post('/api/animals', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/index.html'));
+    res.sendFile(path.join(__dirname, './public1/index.html'));
 });
 app.get('/animals', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/animals.html'));
+    res.sendFile(path.join(__dirname, './public1/animals.html'));
 });
 app.get('/zookeepers', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/zookeepers.html'));
+    res.sendFile(path.join(__dirname, './public1/zookeepers.html'));
 });
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, './public/index.html'));
+    res.sendFile(path.join(__dirname, './public1/index.html'));
 });
 
 

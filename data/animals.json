@@ -153,6 +153,24 @@
         "hungry"
       ],
       "id": "15"
+    },
+    {
+      "name": "fed",
+      "species": "zebra",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "zany"
+      ],
+      "id": "16"
+    },
+    {
+      "name": "nick",
+      "species": "zebra",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "zany"
+      ],
+      "id": "17"
     }
   ]
 }
